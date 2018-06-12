@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   namespace :admin do
+<<<<<<< HEAD
     get 'sessions/new'
     get 'sessions/create'
   end
@@ -30,6 +31,8 @@ Rails.application.routes.draw do
   end
   get 'categories/show'
   namespace :admin do
+=======
+>>>>>>> parent of 1385580... Generate all controllers for public and admin
     get 'posts/new'
     get 'posts/create'
     get 'posts/edit'
