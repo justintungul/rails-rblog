@@ -15,9 +15,9 @@ Rails.application.routes.draw do
   namespace :admin do
     get 'comments/destroy'
   end
-  get 'contacts/new'
+  get 'contact' => 'contacts#new'
   get 'contacts/create'
-  get 'about/index'
+  get 'about' => 'about#index'
   get 'comments/new'
   namespace :admin do
     get 'categories/new'
@@ -40,5 +40,15 @@ Rails.application.routes.draw do
   end
   get 'posts/index'
   get 'posts/show'
+
+  resources :posts, :categories, :comments
+  resources 'contacts', only: [:new, :create]
+
+  namespace :admin do
+    resources :posts, :categories, :comments, :users
+  end
+
+  root 'posts#index'
+
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
