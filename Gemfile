@@ -34,6 +34,7 @@ gem 'bcrypt', '~> 3.1.7'
 gem 'mail_form'
 gem 'simple_form'
 gem 'will_paginate', '~> 3.0'
+gem "paperclip", "~> 6.0.0"
 
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
