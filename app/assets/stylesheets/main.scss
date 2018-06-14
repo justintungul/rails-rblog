@@ -101,7 +101,7 @@ body{
 	padding:0;
 }
 
-.post small{
+small{
 	background:$primary-color;
 	color:#fff;
 	display:block;
@@ -112,6 +112,10 @@ body{
 .post .btn {
 	margin-top: 20px;
 	display: block;
+}
+
+.comments img{
+	width:100%;
 }
 
 footer{
