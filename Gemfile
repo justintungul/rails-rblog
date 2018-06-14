@@ -27,6 +27,7 @@ gem 'jbuilder', '~> 2.5'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
+gem 'jquery-rails'
 gem 'bootstrap-sass', '~> 3.2.0'
 gem 'autoprefixer-rails'
 # gem 'bcrypt-ruby', :require => 'bcrypt'
@@ -35,6 +36,8 @@ gem 'mail_form'
 gem 'simple_form'
 gem 'will_paginate', '~> 3.0'
 gem "paperclip", "~> 6.0.0"
+
+gem 'bootstrap-wysihtml5-rails'
 
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
