@@ -1,3 +1,13 @@
+<script type="text/javascript">
+  $(document).ready(function(){
+
+    $('.wysihtml5').each(function(i, elem) {
+      $(elem).wysihtml5();
+    });
+
+  })
+</script>
+
 <h2>Edit Post</h2>
 
 <%= form_for [:admin, @post] do |f| %>
@@ -40,7 +50,7 @@
 
 	<div class="form-group">
 		<%= f.label :body %>
-		<%= f.text_area :body ,class:'form-control' %>
+		<%= f.text_area :body ,class:'form-control wysihtml5', id:'some-textarea' %>
 	</div>
 	<br>
 	<%= f.submit "Submit", class:'btn btn-primary' %>
