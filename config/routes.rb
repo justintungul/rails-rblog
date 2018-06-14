@@ -1,7 +1,10 @@
 Rails.application.routes.draw do
   namespace :admin do
-    get 'sessions/new'
+    get "login" => "sessions#new", :as => "login"
     get 'sessions/create'
+  end
+  namespace :admin do
+    get "logout" => "sessions#destroy", :as => "logout"
   end
   namespace :admin do
     get 'users/new'
